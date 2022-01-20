@@ -290,10 +290,13 @@ h3 {
   --gap: 3rem;
 }
 .card {
+  background: linear-gradient(-135deg, transparent 45px, #fff 0) top right;
   border-radius: 5px;
+  border-top-right-radius: 27px;
   border: 1px solid lightgray;
   cursor: pointer;
   padding: 2rem;
+  position: relative;
 }
 .card__header {
   color: #02042d;
@@ -308,20 +311,11 @@ h3 {
 }
 
 /* Folded Corners */
-/* .folded-payment-link {
-  position: relative;
-}
-.folded-payment-link::before {
-  content: url("./assets/payment-links.svg");
-  background-color: #2b84ea;
-  aspect-ratio: 1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: inline-block;
+.card__logo {
+  background-color: hsl(212, 82%, 54.3%);
   border-radius: 100%;
-  padding: 5px;
-  border-width: 0;
-  border-style: solid;
-  border-color: #fff #fff #818597 #818597;
-} */
+  height: 45px;
+  inset: 0.5px 0.5px auto auto;
+  position: absolute;
+  width: 45px;
+}
