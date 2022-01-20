@@ -124,16 +124,24 @@ h3 {
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 2rem;
-  gap: 1.6rem;
+  gap: 1rem;
 }
 .navbar__nav {
   list-style-type: none;
   align-items: center;
 }
+.nav__link {
+  padding: 1.5rem 0.5rem;
+}
 .nav__link a {
   color: var(--color-content);
   text-decoration: none;
+}
+.nav__link.active {
+  color: #2681ea;
+  border-bottom: 5px solid #2681ea;
 }
 .mobile-nav-toggler {
   display: none;
