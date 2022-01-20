@@ -125,9 +125,11 @@ h3 {
   display: flex;
   justify-content: space-between;
   padding-top: 2rem;
+  gap: 1.6rem;
 }
 .navbar__nav {
   list-style-type: none;
+  align-items: center;
 }
 .nav__link a {
   color: var(--color-content);
@@ -136,7 +138,8 @@ h3 {
 .mobile-nav-toggler {
   display: none;
 }
-@media screen and (max-width: 1023px) {
+
+@media screen and (max-width: 1024px) {
   .navbar__nav {
     align-items: flex-start;
     background-color: white;
@@ -147,8 +150,8 @@ h3 {
     padding: 3rem;
     position: absolute;
     text-transform: uppercase;
-    transform: translateX(100%);
-    transition: transform 0.35s ease-out;
+    transform: translateX(200%);
+    transition: transform 350ms ease-out;
     z-index: 1000;
   }
   .navbar__nav[data-visible="true"] {
@@ -205,6 +208,7 @@ h3 {
   background-color: #02042d;
   border: 1px solid #2b84ea;
   color: var(--color-primary);
+  margin-right: 1.6rem;
 }
 .btn--primary {
   background-color: #2b84ea;
@@ -264,6 +268,11 @@ h3 {
 
 /* Section 3 */
 /* Card Component*/
+.card-container {
+  display: grid;
+  gap: 3rem;
+  --gap: 3rem;
+}
 .card {
   border-radius: 5px;
   border: 1px solid lightgray;
