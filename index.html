@@ -12,10 +12,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./js/nav.js" defer></script>
   </head>
   <body>
     <section class="block block--dark">
-      <nav class="navbar container">
+      <header class="navbar container">
         <a href="" class="navbar__brand">
           <img
             src="./assets/razorpay-logo.svg"
@@ -24,16 +25,37 @@
             height="auto"
           />
         </a>
-        <ul class="navbar__nav d-lg-block">
-          <li class="nav__link">Payments</li>
-          <li class="nav__link">Banking Plus</li>
-          <li class="nav__link">Rize</li>
-          <li class="nav__link">Resource</li>
-          <li class="nav__link">Partners</li>
-          <li class="nav__link">Support</li>
-          <li class="nav__link">Pricing</li>
-        </ul>
-        <div class="btn-group">
+        <button
+          class="mobile-nav-toggler"
+          aria-controls="navbar__nav"
+          aria-expanded="false"
+        ></button>
+        <nav>
+          <ul data-visible="false" id="navbar__nav" class="flex navbar__nav">
+            <li class="nav__link">
+              <a href="#">Payments</a>
+            </li>
+            <li class="nav__link">
+              <a href="#">Banking Plus</a>
+            </li>
+            <li class="nav__link">
+              <a href="#">Rize</a>
+            </li>
+            <li class="nav__link">
+              <a href="#">Resource</a>
+            </li>
+            <li class="nav__link">
+              <a href="#">Partners</a>
+            </li>
+            <li class="nav__link">
+              <a href="#">Support</a>
+            </li>
+            <li class="nav__link">
+              <a href="#">Pricing</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- <div class="flex">
           <img src="./assets/india-flag.svg" alt="" class="d-lg-block" />
           <button class="btn btn--outline">Log In</button
           ><button class="btn btn--secondary d-lg-block">
@@ -50,11 +72,13 @@
             </svg>
           </button>
         </div>
-        <div class="hamburger dg-lg-none">---</div>
-      </nav>
-      <div class="hero container">
+        <div class="hamburger dg-lg-none">---</div> -->
+      </header>
+      <div class="hero grid-lg-col-2 container">
         <div class="hero__section-1">
-          <h1>Power your finance, grow your business</h1>
+          <h1 class="heading-underline heading-underline">
+            Power your finance, grow your business
+          </h1>
           <p class="hero__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
             fugit quis asperiores vero sed est, illo sit deleniti blanditiis
@@ -63,7 +87,9 @@
             deleniti animi laboriosam dolorum repellat voluptatum. Quaerat nam
             placeat excepturi inventore!
           </p>
-          <button class="btn btn--primary">Sign up now</button>
+          <footer>
+            <button class="btn btn--primary">Sign up now</button>
+          </footer>
         </div>
         <div class="hero__section-2">
           <img class="section-2__image" src="./assets/hero-image.jpg" alt="" />
@@ -76,5 +102,102 @@
         fill="#02042B"
       ></path>
     </svg>
+    <h2 class="text-center heading-underline heading-underline-center">
+      Access Payments with Razorpay Payment Suite
+    </h2>
+    <section class="block">
+      <div class="container">
+        <div class="section-2">
+          <div class="main grid-md-col-2">
+            <div class="item-1">
+              <h3>
+                Supercharge your business with the all‑powerful Payment Gateway
+              </h3>
+              <div>
+                <ul class="list-block list-tick">
+                  <li class="list-item">100+ Payment Methods</li>
+                  <li class="list-item">Industry Leading Success Rate</li>
+                  <li class="list-item">Superior Checkout Experience</li>
+                  <li class="list-item">Easy to Integrate</li>
+                  <li class="list-item">Instant Settlements from day 1</li>
+                  <li class="list-item">In-depth Reporting and Insights</li>
+                </ul>
+              </div>
+              <footer class="flex">
+                <button class="btn btn--primary">Sign up now</button>
+                <a class="arrow-link" href="#">know more</a>
+              </footer>
+            </div>
+            <div class="item-2 d-md-block">
+              <img src="./assets/payment.PNG" alt="" width="100%" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block">
+      <div class="container grid-md-col-2 grid-lg-col-3">
+        <div class="card">
+          <header class="card__header">Payment Link</header>
+          <div class="card__body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sit
+            commodi atque nisi impedit nulla,
+          </div>
+          <footer class="card__footer">
+            <a class="arrow-link" href="#">know more</a>
+          </footer>
+        </div>
+        <div class="card">
+          <header class="card__header">Payment Link</header>
+          <div class="card__body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sit
+            commodi atque nisi impedit nulla,
+          </div>
+          <footer class="card__footer">
+            <a class="arrow-link" href="#">know more</a>
+          </footer>
+        </div>
+        <div class="card">
+          <header class="card__header">Payment Link</header>
+          <div class="card__body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sit
+            commodi atque nisi impedit nulla,
+          </div>
+          <footer class="card__footer">
+            <a class="arrow-link" href="#">know more</a>
+          </footer>
+        </div>
+        <div class="card">
+          <header class="card__header">Payment Link</header>
+          <div class="card__body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sit
+            commodi atque nisi impedit nulla,
+          </div>
+          <footer class="card__footer">
+            <a class="arrow-link" href="#">know more</a>
+          </footer>
+        </div>
+        <div class="card">
+          <header class="card__header">Payment Link</header>
+          <div class="card__body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sit
+            commodi atque nisi impedit nulla,
+          </div>
+          <footer class="card__footer">
+            <a class="arrow-link" href="#">know more</a>
+          </footer>
+        </div>
+        <div class="card">
+          <header class="card__header">Payment Link</header>
+          <div class="card__body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sit
+            commodi atque nisi impedit nulla,
+          </div>
+          <footer class="card__footer">
+            <a class="arrow-link" href="#">know more</a>
+          </footer>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
