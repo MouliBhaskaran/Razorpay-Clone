@@ -233,6 +233,19 @@ h3 {
   padding: 4rem;
   margin-block: 2rem;
 }
+
+.section-2 footer {
+  flex-direction: column-reverse;
+  align-items: stretch;
+}
+
+@media screen and (min-width: 767px) {
+  .section-2 footer {
+    margin-top: 4rem;
+    flex-direction: row;
+    align-items: center;
+  }
+}
 /* List Component */
 .list-block {
   list-style-type: none;
@@ -246,11 +259,6 @@ h3 {
 .list-block .list-item {
   cursor: pointer;
   margin-block: 1.5rem;
-}
-
-.section-2 footer {
-  margin-top: 4rem;
-  align-items: center;
 }
 
 /* Link Component */
@@ -290,3 +298,22 @@ h3 {
   font-size: 1.6rem;
   margin-block: 3rem;
 }
+
+/* Folded Corners */
+/* .folded-payment-link {
+  position: relative;
+}
+.folded-payment-link::before {
+  content: url("./assets/payment-links.svg");
+  background-color: #2b84ea;
+  aspect-ratio: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  border-radius: 100%;
+  padding: 5px;
+  border-width: 0;
+  border-style: solid;
+  border-color: #fff #fff #818597 #818597;
+} */
